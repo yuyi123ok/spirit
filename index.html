@@ -3,47 +3,758 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spirit8</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="./assets/css/reset.less">
-    <link rel="stylesheet/less" href="./assets/css/common.less">
-    <link rel="stylesheet/less" href="./assets/css/index.less">
+    <title>spirit</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+    <link rel="stylesheet/less" href="./assets/css/index.less" />
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <nav class="navbar navbar-default">
+    <!-- 头部 -->
+    <header class="header" id='header'>
+        <nav class="navbar navbar-inverse">
             <div class="container">
                 <!-- logo -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo" href="#">Spirit8</a>
+                    <a class="logo navbar-brand wow fadeInLeft" href="javascript:void(0)">Spirit8</a>
                 </div>
 
                 <!-- 导航元素 -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">testimonials</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li>
+                            <a href="#banner" class="wow fadeInRight" data-wow-delay="100ms">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="wow fadeInRight" data-wow-delay="200ms">About</a>
+                        </li>
+                        <li>
+                            <a href="#service" class="wow fadeInRight" data-wow-delay="300ms">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#client" class="wow fadeInRight" data-wow-delay="400ms">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#test" class="wow fadeInRight" data-wow-delay="500ms">testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="wow fadeInRight" data-wow-delay="600ms">CONTACT</a>
+                        </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- banner -->
+    <div class="banner" id="banner">
+        <video autoplay id="background" muted loop>
+            <source src="./assets/images/banner.mp4" />
+        </video>
+        <!-- <video id="background" muted>
+            <source src="./assets/images/banner.mp4" />
+        </video> -->
+
+        <div class="box">
+            <h3 class="title wow fadeInUp" data-wow-delay=".3s">
+                wELCOME on
+                <span>spirit8</span>
+            </h3>
+
+            <p class="info wow fadeInUp" data-wow-delay=".5s">
+                We are a digital agency with
+                <span>years of experience</span> and with
+                <span>extraordinary people</span>
+            </p>
+
+            <div class="more wow fadeInUp" data-wow-delay=".7s">
+                <a href="#footer">↓</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="left wow fadeInUp" data-wow-delay="400ms">
+                <img src="./assets/images/about-background.png" />
+            </div>
+
+            <div class="right">
+                <div class="title wow fadeInUp">
+                    <span class="small">About us</span>
+                    <h3 class="big">
+                        <span>Some</span> words
+                        <span>about us</span>
+                    </h3>
+                </div>
+
+                <p class="info wow fadeInUp">
+                    We love building and rebuilding brands through our specific skills. Using colour, fonts, and
+                    illustration, we brand companies in a way they will never forget.
+                </p>
+
+                <ul class="list">
+                    <li class="wow fadeInUp" data-wow-delay="200ms">
+                        <span>Mission - </span> We deliver uniqueness and quality
+                    </li>
+                    <li class="wow fadeInUp" data-wow-delay="300ms">
+                        <span>Mission - </span> We deliver uniqueness and quality
+                    </li>
+                    <li class="wow fadeInUp" data-wow-delay="400ms">
+                        <span>Mission - </span> We deliver uniqueness and quality
+                    </li>
+                </ul>
+
+                <div class="more wow fadeInUp" data-wow-delay="500ms">
+                    <div class="icon">
+                        <img src="./assets/images/about-btn.png">
+                    </div>
+                    <span class="name">Browse our work</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team -->
+    <div class="team">
+        <div class="container">
+            <div class="subject wow fadeInUp" data-wow-delay="500ms">
+                <h3 class="title">
+                    Meet
+                    <span>our team</span>
+                </h3>
+            </div>
+
+            <div class="listbox">
+                <input type="radio" name="list" id="list1" checked>
+                <div class="list">
+
+                    <div class="item wow fadeInUp" data-wow-delay="500ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3467763490,2810566303&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="700ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3467763490,2810566303&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="800ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3467763490,2810566303&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="900ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3467763490,2810566303&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="list" id="list2">
+                <div class="list">
+
+                    <div class="item wow fadeInUp" data-wow-delay="500ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3496900413,1817694593&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="700ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3496900413,1817694593&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="800ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3496900413,1817694593&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="900ms">
+                        <div class="thumb">
+                            <img src="https://img1.baidu.com/it/u=3496900413,1817694593&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="list" id="list3">
+                <div class="list">
+
+                    <div class="item wow fadeInUp" data-wow-delay="500ms">
+                        <div class="thumb">
+                            <img src="https://img2.baidu.com/it/u=4178944938,130093935&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="700ms">
+                        <div class="thumb">
+                            <img src="https://img2.baidu.com/it/u=4178944938,130093935&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="800ms">
+                        <div class="thumb">
+                            <img src="https://img2.baidu.com/it/u=4178944938,130093935&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp" data-wow-delay="900ms">
+                        <div class="thumb">
+                            <img src="https://img2.baidu.com/it/u=4178944938,130093935&fm=26&fmt=auto&gp=0.jpg" />
+                        </div>
+
+                        <div class="content">
+                            <h5 class="name">Jason Statham</h5>
+                            <span class="job">Knife designer</span>
+                            <p class="info">
+                                Do not seek to change what has come before. Seek to create that which has not.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="more wow fadeInUp" data-wow-delay="500ms">
+                <label for="list1"></label>
+                <label for="list2"></label>
+                <label for="list3"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div class="service" id="service">
+        <div class="container">
+
+            <h1>take a look at <span>our services</span></h1>
+            <p class="title wow fadeInUp" data-wow-delay="100ms">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
+                Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                popular during the Renaissance. The first line of
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+
+            <div class="content wow fadeInUp" data-wow-delay="150ms">
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/serviceicon.png" alt="">
+                    </div>
+                    <p>Web design</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                        1.10.32.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/serviceicon2.png" alt="">
+                    </div>
+                    <p>Mobile apps</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                        1.10.32.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/serviceicon3.png" alt="">
+                    </div>
+                    <p>PHOTOGRAPHY</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                        1.10.32.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/images/serviceicon4.png" alt="">
+                    </div>
+                    <p>marketing</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                        1.10.32.
+                    </p>
+                </div>
+            </div>
+
+            <div class="more">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- client -->
+    <div class="client" id="client">
+        <div class="container">
+            <h1 class="wow fadeInUp">SOME OF<span>OUR CLIENTS</span></h1>
+
+            <div class="container_box">
+                <input type="radio" name="font" id="client_button1" checked>
+                <div class="contentbox" id="hidden">
+                    <span><img src="./assets/images/client1img.png" alt="" id="hidden"></span>
+                    <span><img src="./assets/images/client2img.png" alt="" id="hidden"></span>
+                    <span><img src="./assets/images/client3img.png" alt="" id="hidden"></span>
+                    <span><img src="./assets/images/client4img.png" alt="" id="hidden"></span>
+                    <span><img src="./assets/images/client5img.png" alt="" id="hidden" style="margin-right: 0;"></span>
+                </div>
+
+                <input type="radio" name="font" id="client_button2">
+                <div class="contentbox" id="container2">
+                    <div class="content">
+                        <span>123</span>
+                        <span>456</span>
+                        <span>789</span>
+                        <span>101112</span>
+                        <span>abc</span>
+                    </div>
+                </div>
+
+                <input type="radio" name="font" id="client_button3">
+                <div class="contentbox" id="container3">
+                    <div class="content">
+                        <span>logo1</span>
+                        <span>logo2</span>
+                        <span>logo3</span>
+                        <span>logo4</span>
+                        <span>logo5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more wow fadeInUp" data-wow-delay="150ms">
+                <label id="span1t" for="client_button1"></label>
+                <label id="span2t" for="client_button2"></label>
+                <label id="span3t" for="client_button3"></label>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <!-- work -->
+    <div class="work" id="work">
+        <div class="container">
+            <div class="subject wow fadeInUp" data-wow-delay="200ms">
+                <h3 class="title">
+                    take a look at
+                    <span>our work</span>
+                </h3>
+            </div>
+
+            <p class="info wow fadeInUp" data-wow-delay="200ms">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
+                Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                popular during the Renaissance. The first line of
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+
+            <div class="typelist">
+                <div class="top">
+                    <div class="left wow fadeInUp" data-wow-delay="400ms">
+                        <h4 class="title">Filter by type</h4>
+                    </div>
+
+                    <div class="right wow fadeInUp" data-wow-delay="400ms">
+                        <a href="javascript:void(0)">All</a>
+                        <a href="javascript:void(0)">Web design</a>
+                        <a href="javascript:void(0)">Mobile design</a>
+                        <a href="javascript:void(0)">Photograpy</a>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <div class="item wow fadeInUp" data-wow-delay="200ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="300ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="400ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="500ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="600ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="700ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="800ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="900ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="1000ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="1100ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="1200ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="1300ms">
+                        <img src="./assets/images/work-img.png" />
+                        <div class="block">
+                            <p>Trend and fashion</p>
+                            <p>Website design</p>
+                            <div class="circle">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- test -->
+    <!-- <div class=" test " id="test">
+        <div class=" container ">
+            <h1 class="wow" data-wow-delay="100ms" id=" hidden "><span>our clients’</span>testimonials</h1>
+
+            <p class="title wow" data-wow-delay="150ms" id=" hidden">
+                This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, " Lorem ipsum dolor sit amet.. ", comes from a line in section 1.10.32.
+            </p>
+
+            <p data-wow-delay="200ms" id="hidden">Dean Martin, CEO Acme Inc.</p>
+
+            <div class=" more " data-wow-delay=" 200ms ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="container2">
+                <h1 class="wow fadeInUp" data-wow-delay=" 100ms " id=" hidden "><span>our clients’</span>testimonials
+                </h1>
+
+                <p class="title wow fadeInUp" data-wow-delay=" 150ms " id=" hidden ">
+                    This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, " Lorem ipsum dolor sit amet.. ", comes from a line in section 1.10.32.
+                </p>
+
+                <p class="wow fadeInUp" data-wow-delay=" 200ms " id=" hidden ">Dean Martin, CEO Acme Inc.</p>
+
+            </div>
+
+            <div class="container2">
+                <h1 class=" wow fadeInUp " data-wow-delay=" 100ms "><span>my clients’</span>Dean Martin</h1>
+
+                <p class="title wow fadeInUp" data-wow-delay=" 150ms ">
+                    Xinhua, xinhuanet.com/english,english.news.cn, chinaview,brings you headlines, photos, video and news stories from china, Asia and Pacific, comes from a line in section 1.10.32.asdas
+                </p>
+
+                <p class=" wow fadeInUp " data-wow-delay=" 200ms ">Dean Martin, CEO Acme Inc.</p>
+
+            </div>
+
+            <div class=" container2 ">
+                <h1 class=" wow fadeInUp " data-wow-delay=" 100ms "><span>your clients’</span>Dean Martin</h1>
+
+                <p class=" title wow fadeInUp " data-wow-delay=" 150ms ">
+                    Chinadaily.com.cn is the largest English portal in China, providing news, business information, BBS, learning materials. The Website has channe, comes from a line in section 1.10.32.asdas
+                </p>
+
+                <p class=" wow fadeInUp " data-wow-delay=" 200ms ">Dean Martin, CEO Acme Inc.</p>
+
+            </div>
+        </div>
+    </div> -->
+    <div class="test" id="test">
+        <div class="container">
+            <div class="subject wow fadeInUp" data-wow-delay="500ms">
+                <h3 class="title">
+                    our clients’
+                    <span>testimonials</span>
+                </h3>
+            </div>
+
+            <div class="infolist wow fadeInUp" data-wow-delay="300ms">
+                <input type="radio" name="info" id="info1" checked />
+                <div class="info">
+                    <p class="content">
+                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The first
+                        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
+
+                    <div class="name">
+                        <span>Dean Martin, </span>CEO Acme Inc.
+                    </div>
+                </div>
+
+                <input type="radio" name="info" id="info2" />
+                <div class="info">
+                    <p class="content">
+                        There are moments in life when you miss someone so much that you just want to pick them from
+                        your dreams and hug them for real! Dream what you want to dream;go where you want to go
+                    </p>
+
+                    <div class="name">
+                        <span>Dean Martin, </span>CEO Acme Inc.
+                    </div>
+                </div>
+
+                <input type="radio" name="info" id="info3" />
+                <div class="info">
+                    <p class="content">
+                        May you have enough happiness to make you sweet,enough trials to make you strong,enough sorrow
+                        to keep you human,enough hope to make you happy?
+                    </p>
+
+                    <div class="name">
+                        <span>Dean Martin, </span>CEO Acme Inc.
+                    </div>
+                </div>
+
+                <div class="morebox">
+                    <div class="more wow fadeInUp" data-wow-delay="500ms">
+                        <label for="info1"></label>
+                        <label for="info2"></label>
+                        <label for="info3"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <form action="" method="post">
+            <div class=" container ">
+                <h1 class=" wow fadeInUp " data-wow-delay=" 50ms ">feel free to <span>contact us</span></h1>
+
+                <p class=" title wow fadeInUp " data-wow-delay=" 100ms ">
+                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus Bonorum et Malorum " (The
+                    Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+                    ethics, very popular during the Renaissance.
+                </p>
+
+                <div class=" form wow fadeInUp " data-wow-delay=" 150ms ">
+                    <div class=" form_left ">
+                        <label for=" name ">Name</label><sup>*</sup>
+                        <input type=" text " id=" name " placeholder=" 请输入您的姓名 " required>
+                    </div>
+
+                    <div class=" form_right " data-wow-delay=" 200ms ">
+                        <label for=" email ">Email address</label><sup>*</sup>
+                        <input type=" text " id=" email " placeholder=" 请输入您的邮箱 required">
+                    </div>
+
+
+                </div>
+
+                <div class=" form_bottom wow fadeInUp " data-wow-delay=" 250ms ">
+                    <label for=" message ">Message</label><sup>*</sup>
+                    <textarea name=" " id=" message " cols=" 30 " rows=" 10 " placeholder=" 请输入内容 " required></textarea>
+                </div>
+
+                <div class=" send wow fadeInUp " data-wow-delay=" 300ms ">
+                    <button class=" btn ">
+                        SEND
+                    </button>
+                </div>
+            </div>
+    </div>
+    </form>
+
+
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class=" container ">
+            <div class=" footer_left wow fadeInLeft " data-wow-delay=" 100ms ">ALL RIGHTS RESERVED. COPYRIGHT © 2014
+                <span>SPIRIT8</span>
+            </div>
+            <div class="footer_right wow fadeInRight" data-wow-delay="150ms">
+                <div class="border">
+                    <img src=" ./assets/images/footerimg1.png " alt=" ">
+                </div>
+                <div class="border">
+                    <img src=" ./assets/images/footerimg2.png " alt=" ">
+                </div>
+                <div class="border">
+                    <img src=" ./assets/images/footerimg3.png " alt=" ">
+                </div>
+                <div class="border">
+                    <img src=" ./assets/images/footerimg4.png " alt=" ">
+                </div>
+                <div class="border">
+                    <img src=" ./assets/images/footerimg5.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="back">
+        <a href="#banner" id="gotop">
+            <img src="./assets/images/top.svg" />
+        </a>
+    </div>
 </body>
 
 </html>
@@ -51,3 +762,46 @@
 <script src="./assets/js/less.min.js"></script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<script>
+    var background = document.getElementById("background")
+
+
+    background.playbackRate = 10
+
+    //实例化wow.js
+    new WOW().init()
+
+    //锚点跳转滑动效果  
+    $('#bs-example-navbar-collapse-1 a[href],#banner a[href],#back a[href]').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
+    //给页面绑定一个滚动条事件
+    $(document).scroll(function () {
+        //获取滚动条滚动长度大小
+        var distance = $(this).scrollTop()
+
+        //当滚动条滚动的长度大于10
+        if (distance > 10) {
+            //显示返回顶部
+            $("#gotop").css({ zIndex: 99998, opacity: 1 });
+            $("#header").css({ backgroundColor: '#111111', paddingBottom: 0 });
+        } else {
+            //隐藏返回顶部
+            $("#gotop").css({ zIndex: -99998, opacity: 0 });
+            $("#header").css({ backgroundColor: 'transparent', paddingBottom: '1em' });
+        }
+    })
+</script>
