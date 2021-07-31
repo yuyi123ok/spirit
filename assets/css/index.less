@@ -13,7 +13,7 @@
 
     .box{
         text-align: center;
-        padding:10em 0em 6.2em;
+        padding:10em 0em 10em;
 
         .title{
             font-family: Osl;
@@ -65,7 +65,7 @@
     @media screen and (max-width:500px){
         &{
             .box{
-                padding: 10em 0em 11.2em;
+                padding: 10em 0em 15em;
                 .info{
                     margin-bottom: 6em;
                     font-size: 1em;
@@ -77,7 +77,7 @@
     @media screen and (min-height:1024px){
         &{
             .box{
-                padding: 10em 0em 11em;
+                padding: 10em 0em 12em;
                 margin-bottom: 15em;
             }
         }
@@ -257,7 +257,7 @@
         text-align: center;
         background:url('../images/title-background.png') no-repeat bottom center;
         padding-bottom:1.5em;
-        margin-bottom:8em;
+        // margin-bottom:8em;
 
         .title{
             font-family: Osl;
@@ -274,7 +274,7 @@
         position: relative;
         width: 100%;
         height: 22em;
-        margin-bottom: 1em;
+        margin-bottom: 5em;
         // background: red;
 
         input:checked + .list{
@@ -303,23 +303,26 @@
                 text-align: center;
     
                 .thumb{
+                    transform: scale(0.8);
                     border-radius: 100%;
                     overflow:hidden;
-                    margin-bottom:1.5em;
+                    margin-bottom:.5em;
     
                     img{
                         width:100%;
+                       
                     }
     
                     transition:all linear .3s;
     
                     &:hover{
-                        transform:scale(1.2);
+                        transform:scale(1.1);
                     }
                 }
                 
     
                 .content{
+
                     .name{
                         font-family: Ossb;
                         font-size:1.3em;
@@ -468,6 +471,7 @@
     .title{
         color: #6c6c6c;
         margin-bottom: 10rem;
+        text-align: center;
     }
 
     .content{
@@ -479,9 +483,12 @@
             width: 23%;
 
             .img{
+                display: flex;
+                justify-content: center;
+                align-content: center;
                 margin: 0 auto;
-                width: 10rem;
-                height: 10rem;
+                width: 7em;
+                height: 7em;
                 border-radius: 100%;
                 overflow: hidden;
                 margin-bottom: 2rem;
@@ -489,9 +496,11 @@
                 border: 8px solid #fcac45;
 
                 img{
-                    margin-top: 3rem;
-                    width: 50%;
+                    align-self: center;
                     height: 50%;
+                    // margin-top: 3rem;
+                    // width: 50%;
+                    // height: 50%;
                 }
             }
 
@@ -519,7 +528,7 @@
             .img{
 
                 img{
-                    width: 30%;
+                    // width: 30%;
                 }
             }
         }
@@ -529,8 +538,8 @@
             .img{
 
                 img{
-                    width: 40%;
-                    height: 40%;
+                    // width: 40%;
+                    // height: 40%;
                 }
             }
         }
@@ -539,8 +548,8 @@
             .img{
 
                 img{
-                    width: 40%;
-                    height: 40%;
+                    // width: 40%;
+                    // height: 40%;
                 }
             }
         }
@@ -614,9 +623,10 @@
         }
 
         .container_box{
-            width: 50%;
+            width: 100%;
             height: 15em;
             position: relative;
+            margin: 0 auto;
             // background: crimson;
         }
 
@@ -630,6 +640,7 @@
         }
 
         .contentbox{
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -642,6 +653,7 @@
             position: absolute;
             left: 0;
             top: 30%;
+            margin: 0 auto;
     
             img{
                 margin-right: 2em;
@@ -700,12 +712,39 @@
         }
     }
 
-    @media screen and (max-width:500px){
-        & .content{
-           
-        }
+    @media screen and (max-width:992px){
         &  {
             .container{
+                .contentbox{
+                    span{
+                        transform: scale(.8);
+
+                        img{
+                            margin-right: 1.5em;
+                            margin-bottom: 1em;
+                        }
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+
+    @media screen and (max-width:500px){
+        &  {
+            .container{
+                .contentbox{
+                    span{
+                        transform: scale(.8);
+
+                        img{
+                            margin-right: 0;
+                            margin-bottom: 1em;
+                        }
+                    }
+                    
+                }
                 
                 #container2,#container3{
                     font-size: 1.5em;
@@ -1187,15 +1226,18 @@
             }
 
             .circle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 margin: auto;
-                width: 3rem;
-                height: 3rem;
+                width: 1em;
+                height: 1em;
                 border: 2px solid #f8a944;
                 border-radius: 100%;
                 color: #f8a944;
-                text-align: center;
-                line-height: 3rem;
-                font-size: 3rem;
+                // text-align: center;
+                // line-height: 2em;
+                font-size: 2em;
                 cursor: pointer;
             }
 
@@ -1219,6 +1261,7 @@
     margin-bottom: 5rem;
 
     h1{
+        
         text-transform: uppercase;
         color: #868686;
         font-size: 3rem;
@@ -1235,6 +1278,7 @@
     }
 
     .title{
+            text-align: center;
             margin-bottom: 15%;
         }
 
